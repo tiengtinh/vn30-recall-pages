@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+    <title>VN30 Recall</title>
+    <link rel="icon" href="./favicon.png" />
+    <link rel="apple-touch-icon" href="./apple-touch-icon.png" />
+    <script>
+      if (location.protocol === 'file:') {
+        document.documentElement.classList.add('file-protocol')
+      }
+    </script>
+    <script type="module" crossorigin src="./assets/index-CM19o6oQ.js"></script>
+    <link rel="modulepreload" crossorigin href="./assets/definitions-D3-FqCV_.js">
+    <link rel="stylesheet" crossorigin href="./assets/index-Cv1TrfcF.css">
+  </head>
+  <body>
+    <main id="file-help" class="file-help" hidden>
+      <h1>Serve this app over HTTP</h1>
+      <p>TradingView loads its chart bundles with XHR, so open this app with npm run dev instead of a file:// page.</p>
+      <pre>npm install
+npm run dev</pre>
+    </main>
+    <div id="app"></div>
+    <script>
+      if (location.protocol === 'file:') {
+        var help = document.getElementById('file-help')
+        var app = document.getElementById('app')
+        if (help) help.hidden = false
+        if (app) app.hidden = true
+      }
+    </script>
+    <script src="./charting_library/charting_library.min.js"></script>
+  </body>
+</html>
